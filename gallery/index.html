@@ -17,9 +17,6 @@
     <!-- Custom CSS -->
     <link href="css/sb-admin.css" rel="stylesheet">
 
-    <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -33,8 +30,6 @@
 </head>
 
 <body>
-
-	<!-- +JMJ + -->
 
     <div id="wrapper">
 
@@ -71,7 +66,7 @@
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
-                    <li class="active">
+                    <li>
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Home</a>
                     </li>
                     <li>
@@ -80,8 +75,8 @@
 					<li>
                         <a href="http://www.blue-granite.com/blog/author/david-eldersveld" target="blank"><i class="fa fa-fw fa-edit"></i> Blog - BlueGranite</a>
                     </li>
-					<li>
-                        <a href="gallery/"><i class="fa fa-fw fa-desktop"></i> Gallery</a>
+					<li class="active">
+                        <a href="gallery.html"><i class="fa fa-fw fa-desktop"></i> Gallery</a>
                     </li>
 					<li>
                         <a href="presentations.html"><i class="fa fa-fw fa-desktop"></i> Presentations</a>
@@ -99,44 +94,53 @@
             <div class="container-fluid">
 
                 <!-- Page Heading -->
-                <!--<div class="row">
+                <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            David Eldersveld <small>About David</small>
+                            Gallery
+                            <!--<small>Subheading</small>-->
                         </h1>
-                        <ol class="breadcrumb">
-                            <li class="active">
-                                <i class="fa fa-dashboard"></i> Home
+                        <!--<ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">David Eldersveld</a>
                             </li>
-                        </ol>
+                            <li class="active">
+                                <i class="fa fa-file"></i> Gallery
+                            </li>
+                        </ol>-->
                     </div>
-                </div>-->
+                </div>
                 <!-- /.row -->
 				
-				<div class="col-lg-8">
-					<br><br><br><br>
-					<p style="font-family:'Segoe UI'; font-size:30px; color:#7a121c" align="center"><b>DataVeld</b></p>
-					<p style="font-family:verdana; color:#9b9a6d" align="center">
-						Welcome to <b><span style="font-family:verdana; color:#7a121c">dataveld.com</span></b>, a place where I am in the process of centralizing and highlighting some of my professional content.
-						More will be added over the coming months. As a consultant focused on the <b><span style="font-family:verdana; color:#7a121c">Microsoft</span></b> and 
-						<b><span style="font-family:verdana; color:#7a121c">Hortonworks</span></b> data platforms, there is a broad variety that reflects my interests and career. 
-						I hope that you are able to get some benefit from whatever material you find available whether it be a blog post, visualization, video, presentation, or code.
-						<b><span style="font-family:verdana; color:#7a121c">Thanks for visiting!
-						<br> ~ David</span></b>
-						<br><br>
-					</p>
-					<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" data-width="100%" href="https://medium.com/@dr_eldersveld/exploring-sql-server-r-services-2de5e39b71dc">Exploring SQL Server R Services</a>
-						<br><br>
-						<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" data-width="100%" href="https://medium.com/@dr_eldersveld/installing-and-configuring-sql-server-r-services-8e7c79d6fdf0">Installing and Configuring SQL Server R Services</a>
-						<br><br>
-						<script async src="https://static.medium.com/embed.js"></script><a class="m-story" data-collapsed="true" data-width="100%" href="https://medium.com/@dr_eldersveld/power-bi-3-data-preparation-tips-to-enhance-your-word-cloud-30e3419759bf">Power BI — 3 Data Preparation Tips to Enhance your Word Cloud</a>		
-				</div>
-				<div class="col-lg-4">
-					<!--Medium blog-->
-					<div align="center">
-						<script async src="https://static.medium.com/embed.js"></script><a class="m-profile" data-collapsed="false" href="https://medium.com/@dr_eldersveld">David Eldersveld</a>
+				<center>
+					<!--Power BI Best Visual Contest-->
+					<h3>Power BI - Best Visual Contest - Hexbin Scatterplot</h3>
+					<div class="well">
+						<a href="http://blogs.msdn.com/b/powerbi/archive/2015/10/08/power-bi-best-visual-contest-announcing-the-contest-winners.aspx" target="blank"><h4>Third Prize Winner</h4></a>
+						<a href="https://app.powerbi.com/visuals" target="blank"><h5>Featured in the Power BI Custom Visual Gallery</h5></a>
+						<br>
+						<p>The hexbin scatterplot for Power BI is a variation on a traditional scatterplot that involves clustering points onto a uniform grid of hexagons. 
+							Rather than relying on size to indicate differences in values like a bubble chart, the hexbin plot instead uses variation in bin color similar to a heat map. 
+							A higher saturation or darker color indicates higher density when working with two measures. 
+							A third measure can be added so that the plot colors change from indicating point density to instead encoding the value of the third measure. 
+							Bin radius can also be adjusted.
+						</p>
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/XLYOFf0S6S8" frameborder="0" allowfullscreen></iframe>
 					</div>
-				</div>
+					<br>
+					<h3>Power BI - Best Visual Contest - Leaflet Map</h3>
+					<div class="well">
+						<p>The enhanced map for Power BI offers anyone a starting place who would like to incorporate the popular Leaflet JS mapping framework into Power BI. 
+						D3 provides scales to handle the fill for polygons (choropleth map) as well as optional areas for points (bubble map).
+						A set of open source tile layers are provided with attribution to Open Street Map, CartoDB, and Stamen where appropriate. 
+						In addition, custom image overlays as well as an option for no base tiles are available.
+						Integration of SQL Server geography is available via WKT or Well Known Text format using the .STAsText() function. 
+						This is more of a proof of concept for integrating Leaflet with Power BI, so other popular geo data formats are not currently available but could certainly be added at a later time.
+						</p>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/PWOhtSVAP-Y" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</center>
+				
             </div>
             <!-- /.container-fluid -->
 
@@ -152,12 +156,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
-	
-	<!-- d3 JavaScript -->
-	<script src="js/plugins/d3/d3-3.5.9.min.js"></script>
-
 </body>
+
+</html>
