@@ -8,7 +8,7 @@
 
 body {
     margin-top: 100px;
-    background-color: #222;
+    background-color: #655a52;
 }
 
 @media(min-width:768px) {
@@ -122,7 +122,7 @@ ul.alert-dropdown {
         border: none;
         border-radius: 0;
         overflow-y: auto;
-        background-color: #222;
+        background-color: #655a52;
         bottom: 0;
         overflow-x: hidden;
         padding-bottom: 40px;
@@ -232,4 +232,13 @@ ul.alert-dropdown {
 	padding-top: 30px; /* IE6 workaround*/
 	height: 315;
 	overflow: hidden;
+}
+
+.dre-title {
+	color:white;
+	font-family:Comfortaa,Helvetica,Arial,sans-serif;
+	font-size: 18pt;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
